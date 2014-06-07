@@ -14,7 +14,7 @@ namespace Common.Tests
         [TestCase(6, 8)]
         public void FibonacciGeneratorTest(int index, int expected)
         {
-            Assert.AreEqual(FibonacciGenerator.Generate(index), new BigInteger(expected));
+            Assert.AreEqual(new BigInteger(expected), FibonacciGenerator.Generate(index));
         }
 
 

@@ -29,9 +29,11 @@ namespace SolutionRunner
                     }
                 }
             }
-            catch
+            catch (Exception ex)
             {
+                Console.WriteLine("An error occured:");
                 Console.WriteLine();
+                Console.WriteLine(ex.ToString());
             }
             finally
             {
@@ -42,7 +44,7 @@ namespace SolutionRunner
         private static void Start(bool firstRun = true)
         {
             int problem;
-            if(firstRun)
+            if (firstRun)
                 Console.WriteLine("Welcome to the ProjectEuler solver program");
 
             Console.WriteLine("Please enter the problem number:");

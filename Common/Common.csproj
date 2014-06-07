@@ -40,7 +40,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DecimalExtensions.cs" />
     <Compile Include="FibonacciGenerator.cs" />
+    <Compile Include="IntegerExtensions.cs" />
+    <Compile Include="Prime.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
