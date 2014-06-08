@@ -66,7 +66,7 @@ namespace SolutionRunner
             var problem = FindProblem(problemNumber);
             var answer = problem.Solve();
 
-            Console.WriteLine(answer);
+            Console.WriteLine("The snswer is: " + answer);
             Console.WriteLine();
             Console.Write("Calculation took {0} ms", stopwatch.ElapsedMilliseconds);
             Console.WriteLine();

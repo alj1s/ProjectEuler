@@ -5,7 +5,8 @@ namespace Common
 {
     public class Prime
     {
-        public static bool IsPrime(int number)
+        public static bool 
+            IsPrime(int number)
         {
             if (number <= 1) return false;
 

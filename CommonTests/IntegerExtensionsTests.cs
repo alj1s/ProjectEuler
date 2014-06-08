@@ -1,5 +1,6 @@
 ﻿
 using NUnit.Framework;
+using Common;
 
 namespace Common.Tests
 {
@@ -13,6 +14,12 @@ namespace Common.Tests
         public void FactorialTest(int number, int expected)
         {
             Assert.AreEqual(expected, number.Factorial());
+        }
+
+        [TestCase(2,4,2)]
+        public void GcdTest(int first, int second, int gcd)
+        {
+            Assert.AreEqual(gcd, first.Gcd(second));
         }
     }
 }
